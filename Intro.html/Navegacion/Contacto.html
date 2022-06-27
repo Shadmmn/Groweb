@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Groweb | Desarrollamos tu web</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../Recursos gr/GROWEB---TAB.jpg">
+</head>
+<body>
+<div id="conten">
+    <nav id="nave">
+        <a href="../index.html" id="nav">Home</a>
+        <a href="Servicios.html" id="nav">Servicios</a>
+        <a href="QuienesSomos.html" id="nav">Quienes Somos</a>
+        <a href="NuestroTrabajo.html" id="nav">Nuestro Trabajo</a>
+        <a href="Contacto.html" id="nav">Contacto</a>
+    </nav>
+<main id="main">
+    <section  class="hecon">
+    <h2> En Groweb sabemos que el mejor diseño es el que mejor representa a nuestros clientes.
+    </h2></section>
+    <section class="hecon2">
+    <h2>¡No dudes en hacernos llegar tus consultas!</h2></section>
+    <div class="contact">
+        <div class="formulario" >      
+          <h3>¡Contactate con nosotros!</h3>
+              <form action="submeter-formulario.php" method="post">       
+                    <label for="nombre" class="colocar_nombre"><span class="obligatorio"></span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="* Nombre">
+                    <label for="email" class="colocar_email">
+                    <span class="obligatorio"></span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="* Email">
+                    <label for="asunto" class="colocar_asunto">
+                    <span class="obligatorio"></span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="* Asunto">
+                    <label for="mensaje" class="colocar_mensaje">
+                    <span class="obligatorio"></span>
+                    </label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="* Deja aquí tu comentario..."></textarea>                    
+                    <button type="submit" name="enviar_formulario" id="enviar" class="enva"><p>Enviar</p></button>
+                    <p class="aviso">
+                    <span class="obligatorio">*</span>los campos son obligatorios.
+                    </p>
+              </form>
+        </div>  
+      </div>
+</main>
+<footer id="pie">
+    <div class="fut">
+    <a href="" class="futa"> <img src="../Recursos gr/IGICON.png" alt="IG" class="imgfut"></a> 
+    <a href="" class="futa"> <img src="../Recursos gr/TWICON.png" alt="TW" class="imgfut"></a> 
+    <a href="" class="futa"> <img src="../Recursos gr/LINKICON.png" alt="LINK" class="imgfut"></a> 
+    <a href="" class="futa"> <img src="../Recursos gr/WPICON.png" alt="WPP" class="imgfut"></a>
+    </div>
+</footer>
+</div>
+</body>
+</html>
