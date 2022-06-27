@@ -218,7 +218,7 @@ text-align:center;
 @media screen and (min-width: 600px) {
 .mainb {
   width: auto;
-  height: 55%;
+  height: 50%;
   border:#393E4650 double;
   border-radius: 15px;
   margin: 6em 3em 0 3em;
