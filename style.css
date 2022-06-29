@@ -7,6 +7,7 @@ body {
     margin: 0%;
     text-decoration: none ;
     background-color: #DBE2EF ;
+    height: auto;
 }
 a {
   text-decoration: none;
@@ -22,10 +23,11 @@ a {
 }
 #conten {
     margin: 0%;
+    height: fit-content;
     padding: 0;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.10fr 1fr .3fr; 
+    grid-template-rows: 0.10fr 1fr .5fr; 
     color:#EEEEEE ;
     grid-template-areas: 
       "nave nave nave"
@@ -168,14 +170,13 @@ a {
   width: 10%;
 }
 .logo { 
+  margin-top: -20px;
     display: block;
     justify-content: space-around;
     align-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10%;
     padding: 0%;
-    
   }
 .sec1 {
   background-color: white;
@@ -446,7 +447,7 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
 }
 .hnta {
   border: #393E46 solid;
-  margin-top: 2em;
+  margin-top: 1em;
   background-color: white;
   border-radius: 15px;
   justify-content: center;
