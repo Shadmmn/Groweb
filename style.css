@@ -435,6 +435,12 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
 }
 
 /*QUIENES SOMOS*/
+.cc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 .qshed{
   text-align: center;
   font-size: 1.2em;
@@ -448,22 +454,34 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
   width: 100%;
   margin-bottom: 5em;
   border-top: white solid 15px;
-  border-bottom: white solid 15px;
+  border-bottom: white solid 15;
 }
 .displ{
+  margin-left: 6.25em;
+  margin-right: 6.25em;
+  padding: 6em;
+  background-color: white;
+  border: #393E46 solid 15px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 1.5em;
 }
 .merch {
   width: 200px;
-  border: #393E46 solid 2px;
+  border: #393E46 solid 3px;
   display: flex;
 }
+.merch:hover{
+  border: #393E4680 solid 3px;
+  box-shadow: -18px 72px 64px -10px rgba(0,0,0,0.31);
+-webkit-box-shadow: -18px 72px 64px -10px rgba(0,0,0,0.31);
+-moz-box-shadow: -18px 72px 64px -10px rgba(0,0,0,0.21);
+}
 .pr { 
-  margin: 5px 10px;
-  width: fit-content;
+  margin: 5px 30px;
+  width: auto;
   display: inline;
   font-size: .5em;
   text-align: center;
