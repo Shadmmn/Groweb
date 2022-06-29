@@ -435,6 +435,40 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
 }
 
 /*QUIENES SOMOS*/
+.qshed{
+  text-align: center;
+  font-size: 1.2em;
+  margin: 5em 3em;
+}
+.hed {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.imgmc{
+  width: 100%;
+  margin-bottom: 5em;
+  border-top: white solid 15px;
+  border-bottom: white solid 15px;
+}
+.displ{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.merch {
+  width: 200px;
+  border: #393E46 solid 2px;
+  display: flex;
+}
+.pr { 
+  margin: 5px 10px;
+  width: fit-content;
+  display: inline;
+  font-size: .5em;
+  text-align: center;
+}
+
 /*NuestroTrabajo*/
 @media screen and (min-width: 600px) {
 .hnt {
