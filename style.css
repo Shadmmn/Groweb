@@ -6,7 +6,71 @@
   * {
     text-decoration: none;
   }
-#body {
+  /*animt*/
+  .logo {
+    animation: fadeIn ease 8s;
+    -webkit-animation: fadeIn ease 8s;
+    -moz-animation: fadeIn ease 8s;
+    -o-animation: fadeIn ease 8s;
+    -ms-animation: fadeIn ease 8s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  .block {
+    background: linear-gradient(0deg, #000, #272727);
+  }
+  .block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(50px);
+  }
+  /*animt*/
+  #body {
     margin: 0%;
     text-decoration: none ;
     background-color: #DBE2EF ;
@@ -15,6 +79,10 @@
 a {
   text-decoration: none;
   color: #393E46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 /*HOME*/
 .fle {
@@ -49,12 +117,6 @@ a {
 -moz-box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.54);
 box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
 }
-a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
 #nav {
   font-size: 1em;
   font-weight:bold;
@@ -85,7 +147,7 @@ a {
     align-content: center;
     grid-area: main;
 }
-.l1{ 
+#l1{ 
   font-size: 1.5em;
   margin: 0;
   padding: 0;
@@ -291,7 +353,7 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
   text-align: center;
   width: 100%;
 }
-.bt {
+#bt {
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -300,13 +362,17 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
   text-align: center;
   width: 100%;
   border-color: #393E4620;
-  transition: all 1.5s ease;
+  transition: all .5s ease;
   background-color: #393E4650;
   margin-bottom: 0;
 }
-.bt:hover{
-    background:#393E46 !important;
-    color: #fff !important;
+#bt:hover{
+    background:#393E46;
+    color: white;
+}
+#bt:hover a{
+transition: .7s ease;
+color: white;
 }
 .arts {
   text-align: center;
