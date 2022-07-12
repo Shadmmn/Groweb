@@ -475,6 +475,9 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
 
 /*QUIENES SOMOS*/
 @media screen and (max-width:600px) {
+  *{
+    text-align: center;
+  }
   .qshed{
     margin-top: 5em;
   }
@@ -504,6 +507,7 @@ box-shadow: 0px 4px 40px 4px rgba(0,0,0,0.40);
   }
 }
 @media screen and (min-width: 600px) {
+  *{text-align: center;}
 .cc {
   display: flex;
   flex-direction: column;
